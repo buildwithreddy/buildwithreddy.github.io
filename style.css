@@ -1,0 +1,42 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+body{
+    background: url(./Assets/wallpaper-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    margin: 0;
+}
+.dock{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 20px;
+}
+.dock-item{
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+.dock-item:hover{
+    transform: scale(1.5);
+}
+.dock-item img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
